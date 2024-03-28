@@ -14,7 +14,13 @@ function buscarAmigo(amigos, nombre) {
   //  buscarAmigo(amigos, 'toni') debe devolver { nombre: 'toni', edad: 33 };
 
   // Tu código aca:
-  
+
+  for(const key in amigos){
+    if(amigos[key].nombre === nombre){
+      return amigos[key];
+    }
+    else continue;
+  }
 }
 
 // No modifiques nada debajo de esta linea //

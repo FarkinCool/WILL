@@ -14,6 +14,13 @@ function pluck(array, propiedad) {
   // Pista: es una buena oportunidad para usar map.
 
   // Tu código acá:
+  let resul = [];
+
+  let map = new Map(Object.entries(array));
+  for(const ite of map.values()){
+      resul = resul.concat(ite[propiedad]);
+  }
+  return resul;
 
 }
 
